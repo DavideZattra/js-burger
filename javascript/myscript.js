@@ -33,11 +33,14 @@ function(){
         console.log(burgerBasePrice)
 
         let userCoupon = document.getElementById('ms_discount-value').value;
-
         console.log(userCoupon)
+
         if (userCoupon.length > 0){
+
             if (validCoupons.includes(userCoupon)){
+
                 burgerBasePrice = burgerBasePrice * 0.8;
+
             } else{
 
                 alert('inserire un coupon valido!')
